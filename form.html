@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: orange;
+
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-family: cursive;
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            justify-content: space-between;
+            text-align: center;
+            padding: 20px 20px;
+            margin: 40px 40px;
+        }
+
+        input {
+            border-style: none;
+            padding: 20px 20px;
+            font-size: 2rem;
+            background-color: antiquewhite;
+            outline: none;
+            border-radius: 20px;
+        }
+
+        button {
+            padding: 20px 50px;
+            margin: 50px;
+            outline: none;
+            border-style: none;
+            font-size: 2rem;
+            color: #FFF;
+            background: green;
+            font-weight: 700;
+            font-family: cursive;
+            border-radius: 40px;
+        }
+
+        button:hover {
+            color: black;
+            background: greenyellow;
+        }
+    </style>
+    <h1>CONTACT FORM</h1>
+    <div class="alert" style="display: none;">Your form is submitted successfully!</div>
+    <form id="contactForm">
+        <input type="text" placeholder="Name" name="name" id="name" required>
+        <br>
+        <br>
+        <input type="email" placeholder="Email" name="email" id="email" required>
+        <br>
+        <br>
+        <input type="tel" placeholder="Phone" name="phone" id="phone" required>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
